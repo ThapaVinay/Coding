@@ -2,23 +2,23 @@ import java.util.Scanner;
 
 class Square
 {
+    int a[],size=10;
+    Scanner sc=new Scanner(System.in);
     Square()
     {
-        Scanner sc=new Scanner(System.in);
-        int size=10;
-        int arr[]=new int [size];
+        a=new int [size];
         System.out.println("Enter any 10 integers ->");
-        for(int i=0;i<size;i++) arr[i]=sc.nextInt();
-        sqr(arr,size);
-        sum(arr,size);
+        for(int i=0;i<size;i++) a[i]=sc.nextInt();
+        sqr(size);
+        sum(size);
     }
-    void sqr(int a[],int n)
+    void sqr(int n)
     {
         System.out.println("Square of values in array -:");
         for(int i=0;i<n;i++)
             System.out.println(a[i]+" -> "+a[i]*a[i]);
     }
-    void sum(int a[],int n)
+    void sum(int n)
     {
         int cal=0;
         for(int i=0;i<n;i++) cal+=a[i];
@@ -27,5 +27,7 @@ class Square
     public static void main(String args[])
     {
         Square obj=new Square();
+        Square obj2=new Square();
+        obj.sqr(obj.size);
     }
 }

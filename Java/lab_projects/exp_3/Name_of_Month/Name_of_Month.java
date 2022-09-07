@@ -1,6 +1,4 @@
 import java.util.Scanner;
-import java.util.jar.Attributes.Name;
-
 class Name_of_Month
 {
     static String mon_name[]=new String[12];

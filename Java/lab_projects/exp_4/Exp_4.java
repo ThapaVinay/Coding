@@ -33,6 +33,22 @@ class Q1_child extends Q1_parent
         obj.enter2(20,30);
     }
 }
+class Player
+{
+
+}
+class Cricket_player extends Player
+{
+
+}
+class Football_player extends Player
+{
+
+}
+class Hockey_player extends Player
+{
+
+}
 class Exp_4
 {
     
